@@ -53,8 +53,14 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
-}
+const writeToFile = (fileName, data) => {
+    const error = fs.writeFileSync(fileName, data);
+    if (error) {
+        console.log(`${fileName} successfully generated`);
+    } else {
+        console.error(`Error with ${fileName}`, error);
+    }
+    }
 
 // function to initialize program
 function init() {
