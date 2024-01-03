@@ -7,47 +7,47 @@ const generateMarkdown = require("./generateMarkdown");
 const questions = [
     { 
         type: 'Input',
-        name: 'Title',
+        name: 'title',
         message: 'What is the titile of your project?',
     }, 
     { 
         type: 'Input',
-        name: 'Description',
+        name: 'description',
         message: 'Breifly describe your project:',
     },
     { 
         type: 'Input',
-        name: 'Table of Contents (Optional)',
+        name: 'table',
         message: 'If your README is long, add a table of contents to make it easy for users to find what they need:',
     },
     { 
         type: 'Input',
-        name: 'Installation',
+        name: 'installation',
         message: 'What are the steps required to install your project? (Provide a step-by-step description of how to get the development environment running.)',
     },
     { 
         type: 'Input',
-        name: 'Usage',
+        name: 'usage',
         message: 'Provide instructions and examples for use. Include screenshots as needed:',
     },
     { 
         type: 'Input',
-        name: 'Credits',
+        name: 'credits',
         message: 'List your collaborators, if any, with links to their GitHub profiles. List any Third-parts assets, and any tutorials you may have followed:',
     },
     { 
         type: 'Input',
-        name: 'License',
+        name: 'license',
         message: 'State your chosen license:',
     },
     { 
         type: 'Input',
-        name: 'How to Contribute',
+        name: 'contributing',
         message: 'Include guidelines for how others can contibutre to your project:',
     },
     { 
         type: 'Input',
-        name: 'Tests',
+        name: 'tests',
         message: 'Write tests for your application, and provide examples on how to run them:',
     },
 ];
