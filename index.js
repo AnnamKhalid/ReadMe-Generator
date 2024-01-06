@@ -42,7 +42,7 @@ const questions = [
     },
     { 
         type: 'Input',
-        name: 'contributing',
+        name: 'ontributing',
         message: 'Include guidelines for how others can contibutre to your project:',
     },
     { 
@@ -50,12 +50,24 @@ const questions = [
         name: 'tests',
         message: 'Write tests for your application, and provide examples on how to run them:',
     },
+    { 
+        type: 'Input',
+        name: 'username',
+        message: 'What is the link to your Github username?',
+    },
+    
+    { 
+        type: 'Input',
+        name: 'email',
+        message: 'What is your email address?',
+    },
 ];
 
 // function to write README file
 const writeToFile = (fileName, data) => {
-    const error = fs.writeFileSync(fileName, data);
-    if (error) {
+    const content = generateMarkdown(data);
+    const error = fs.writeFileSync(fileName, content);
+    if (!error) {
         console.log(`${fileName} successfully generated`);
     } else {
         console.error(`Error with ${fileName}`, error);
@@ -66,7 +78,7 @@ const writeToFile = (fileName, data) => {
 const init = () => {
     inquirer.prompt(questions).then((answers) => {
         const content = generateMarkdown(answers);
-        writeToFile("ReadMe.md", content);
+        writeToFile("ReadMe.md", answers);
     });
 };
 

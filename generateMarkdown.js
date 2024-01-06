@@ -1,7 +1,7 @@
 
 // function to generate markdown for README
 function generateMarkdown(data) {
-    return `# ${data.title}
+    return `# ${data.Title}
 
     ## Description 
     ${data.description}
@@ -26,6 +26,10 @@ function generateMarkdown(data) {
 
     ## Tests
     ${data.tests}
+
+    ## Questions
+    GitHub: ${data.username}
+    Email; ${data.email}
 
   `;
   }

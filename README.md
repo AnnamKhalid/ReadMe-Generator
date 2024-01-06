@@ -1,2 +1,31 @@
-# ReadMe-Generator
-A command-line application that dynamically generates a professional README.md file from a user's input.
+# undefined
+
+    ## Description 
+    l
+
+    ## Table of Contents (Optional) 
+    l
+
+    ## Installation
+    l
+
+    ## Usage
+    l
+
+    ## Credits
+    l
+
+    ## License
+    l
+
+    ## How to Contribute
+    undefined
+
+    ## Tests
+    l
+
+    ## Questions
+    GitHub: l
+    Email; l
+
+  
