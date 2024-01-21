@@ -15,11 +15,7 @@ const questions = [
         name: 'description',
         message: 'Breifly describe your project:',
     },
-    { 
-        type: 'Input',
-        name: 'table',
-        message: 'If your README is long, add a table of contents to make it easy for users to find what they need:',
-    },
+   
     { 
         type: 'Input',
         name: 'installation',
@@ -36,14 +32,15 @@ const questions = [
         message: 'List your collaborators, if any, with links to their GitHub profiles. List any Third-parts assets, and any tutorials you may have followed:',
     },
     { 
-        type: 'Input',
+        type: 'list',
         name: 'license',
-        message: 'State your chosen license:',
+        message: 'Choose a license for your project:',
+        choices: ['MIT', 'GPLv3', 'Apache 2.0', 'BSD 3-Clause', 'No License'],
     },
     { 
         type: 'Input',
-        name: 'ontributing',
-        message: 'Include guidelines for how others can contibutre to your project:',
+        name: 'contributing',
+        message: 'How can others contribute to your project?',
     },
     { 
         type: 'Input',
@@ -78,7 +75,7 @@ const writeToFile = (fileName, data) => {
 const init = () => {
     inquirer.prompt(questions).then((answers) => {
         const content = generateMarkdown(answers);
-        writeToFile("ReadMe.md", answers);
+        writeToFile("ReadMe1.md", answers);
     });
 };
 
