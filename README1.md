@@ -1,7 +1,7 @@
-# al
+# ReadMe generator
 
     ## Description 
-    l
+    Generated  Readme page
 
     ## Table of Contents
 - [Installation](#installation)
@@ -13,24 +13,24 @@
 
 
     ## Installation
-    la
+    ok
 
     ## Usage
-    la
+    ok
 
     ## Credits
-    la
+    ok
 
     ## License
     MIT
 
     ## How to Contribute
-    ;a
+    ok
 
     ## Tests
-    ;a
+    ook
 
     ## Questions
-    GitHub: [;a](https://github.com/;a)
-    Email: [;a](mailto:;a)
+    GitHub: [annam.khalid24](https://github.com/annam.khalid24)
+    Email: [annam.khalid@gmail.com](mailto:annam.khalid@gmail.com)
   
